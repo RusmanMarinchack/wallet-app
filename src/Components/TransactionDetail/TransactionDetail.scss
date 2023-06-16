@@ -1,0 +1,81 @@
+.transaction-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background-color: #f2f2f6;
+    padding: 10px;
+    transition: all 0.3s;
+
+    &.active {
+        transform: translateX(0%);
+    }
+
+    &__header {
+        margin-bottom: 25px;
+        text-align: center;
+        color: #9d9d9d;
+    }
+
+    &__btn-back {
+        position: relative;
+        left: -13px;
+        margin-bottom: 5px;
+
+        & button {
+            width: 30px;
+            font-size: 18px;
+            color: rgb(73, 112, 255);
+            border: none;
+            background: transparent;
+        }
+    }
+
+    &__price {
+        color: #000;
+        font-size: 44px;
+
+        & span {
+            font-size: 48px;
+        }
+    }
+
+    &__target {
+        margin-bottom: 5px;
+    }
+
+    &__main {
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    &__tabel {
+        color: #9d9d9d;
+
+        & > div {
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__status {
+        font-weight: 700;
+        color: #000;
+    }
+
+    & .transaction-detail-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #d5d5d5;
+        font-weight: 700;
+        color: #000;
+    }
+}
